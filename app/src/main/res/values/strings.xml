@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PrimerosPasos</string>
+    <string name="title_activity_fisrt_app">FisrtAppActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="nombre">nombre</string>
+    <string name="preesioname">Preesioname</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
+    <string name="mujer">mujer</string>
+    <string name="hombre">hombre</string>
+    <string name="altura">Altura</string>
+    <string name="peso">peso</string>
+</resources>
