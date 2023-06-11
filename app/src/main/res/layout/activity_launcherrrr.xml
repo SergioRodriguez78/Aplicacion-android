@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".Launcherrrr">
+    tools:context=".MainMenu">
 
     <Button
         android:id="@+id/btnSaludar"
@@ -20,6 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Seccion calculo IMC"
+        />
+    <Button
+        android:id="@+id/btnToDo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do App"
         />
 
 

@@ -12,21 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         //Al arrancar pantalla
-
         val btnStart = findViewById<Button>(R.id.button)
         val etName = findViewById<AppCompatEditText>(R.id.etName)
-
-
-
 
         btnStart.setOnClickListener {
             val name = etName.text.toString()
 
             navigateToResultado(name)
-
-
         }
-
     }
 
     private fun navigateToResultado(name: String) {
