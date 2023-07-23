@@ -5,7 +5,9 @@
     android:background="@color/background_app"
     android:paddingHorizontal="16dp"
     android:paddingVertical="16dp"
-    tools:context=".primeraApp.ui.imc.ImcActivity" android:layout_height="match_parent" android:layout_width="match_parent">
+    tools:context=".primeraApp.ui.imc.ImcActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/vieFemale"
@@ -208,6 +210,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/viewWeight"
         app:layout_constraintTop_toBottomOf="@id/viewHeight">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
