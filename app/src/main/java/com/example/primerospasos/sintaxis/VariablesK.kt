@@ -8,29 +8,31 @@ fun main() {
     Listas()
 
 }
-fun Listas(){
-    var lista:List<String> = listOf("luens","martes","miercoles")
+
+fun Listas() {
+    var lista: List<String> = listOf("luens", "martes", "miercoles")
 
 
-    var filterr= lista.filter { it.contains("a") }
+    var filterr = lista.filter { it.contains("a") }
     println(filterr)
 
-    var dias:MutableList<String> = mutableListOf("martes","miercoles")
+    var dias: MutableList<String> = mutableListOf("martes", "miercoles")
     dias.add("jueves")
-    dias.add(0,"lunes")
-    
+    dias.add(0, "lunes")
+
 }
 
-fun arraysYloops(){
-    val dias= arrayOf("luens","martes","miercoles")
+fun arraysYloops() {
+    val dias = arrayOf("luens", "martes", "miercoles")
     print(dias[0])
-    for(posicion in dias.indices){
+    for (posicion in dias.indices) {
         print(dias[posicion])
     }
-    for ((posicion,value) in dias.withIndex()){
+    for ((posicion, value) in dias.withIndex()) {
         print("la posicion es $posicion y el valor es $value")
     }
-    for(valor in dias){}
+    for (valor in dias) {
+    }
 }
 
 fun valorAleatorio(vari: Any): Any {

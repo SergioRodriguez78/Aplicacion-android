@@ -17,8 +17,8 @@ class ImcActivity : AppCompatActivity() {
     private var height: Int = 120
     private var age: Int = 40
 
-    companion object{
-        const val IMC_KEY= "imc"
+    companion object {
+        const val IMC_KEY = "imc"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +38,7 @@ class ImcActivity : AppCompatActivity() {
 
             height = value.toInt()
 
-            viewBinding.heigh.text = "${height.toString()} cm"
+            viewBinding.heigh.text = "$height cm"
         }
 
         viewBinding.btnSum.setOnClickListener {
@@ -77,7 +77,7 @@ class ImcActivity : AppCompatActivity() {
     }
 
     private fun calculateImc(): Double {
-        val format= DecimalFormat("#.##")
+        val format = DecimalFormat("#.##")
         val imc = weight / (height.toDouble() / 100 * height.toDouble() / 100)
 
         return format.format(imc).toDouble()

@@ -13,7 +13,7 @@ class MainMenu : AppCompatActivity() {
 
     lateinit var viewBinding: ActivityLauncherrrrBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        viewBinding= ActivityLauncherrrrBinding.inflate(layoutInflater)
+        viewBinding = ActivityLauncherrrrBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
 
