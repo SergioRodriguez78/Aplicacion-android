@@ -5,8 +5,11 @@ fun main() {
     showAge(23)
     var suma = sumarNumeros(4, 5)
     println("la suma es $suma")
-    Listas()
-
+    val a = convert(
+        "Apalindromeisaword,phrase,number,orothersequenceofunitsthatcanbereadthesamewayineitherdirection,withgeneralallowancesforadjustmentstopunctuationandworddividers.",
+        2
+    )
+    a.length
 }
 
 fun Listas() {
@@ -130,3 +133,53 @@ fun variablesAlfanumericas() {
     var texto: String = "Hola me llamo $nombre y tengo $edad años"
     println(texto)
 }
+
+class PruebaTecnica {
+    fun convert(s: String, numRows: Int) {
+        if (s.length == 1 || numRows == 1) {
+
+        }
+
+        //return readMatrix(matriz)
+    }
+
+    fun readMatrix(matriz: MutableList<MutableList<String>>): String {
+
+        val a = matriz.joinToString(prefix = ",")
+        return a
+    }
+}
+
+fun convert(s: String, numRows: Int): String {
+    if (s.length == 1 || numRows == 1) {
+        return s
+    }
+    val matriz = MutableList(numRows) { MutableList(s.length) { "" } }
+    var reverse = false
+    var row = 0
+    var column = 0
+
+
+    for (char in s) {
+        matriz[row][column] = char.toString()
+
+        if (row == (numRows - 1)) {
+            reverse = true
+        } else if (row == 0) {
+            reverse = false
+        }
+        if (reverse) {
+            column++
+            row--
+        } else {
+            row++
+        }
+
+    }
+    return matriz.joinToString("") { list ->
+        list.filter {
+            it != ""
+        }.joinToString("")
+    }
+}
+
