@@ -10,4 +10,34 @@
     <string name="hombre">hombre</string>
     <string name="altura">Altura</string>
     <string name="peso">peso</string>
+    <string name="add_a_task">Añade una tarea</string>
+    <string name="other">Other</string>
+    <string name="personal">Personal</string>
+    <string name="negocios">Negocios</string>
+    <string name="agregar">Agregar</string>
+    <string name="female_content_description">Female</string>
+    <string name="male_content_description">Male</string>
+    <string name="predeterminated_height">120 cm</string>
+    <string name="predeterminated_weight">70 kg</string>
+    <string name="up_button">up_button</string>
+    <string name="down_button_content_description">down_button</string>
+    <string name="edad">Edad</string>
+    <string name="predeterminated_age">40 años</string>
+    <string name="calcular">Calcular</string>
+    <string name="up_age_content_description">up_age</string>
+    <string name="down_age_content_description">down_age</string>
+    <string name="seccion_saludar">Seccion saludar</string>
+    <string name="seccion_calculo_imc">Seccion calculo IMC</string>
+    <string name="to_do_app">To Do App</string>
+    <string name="title_result">Tu Resultado</string>
+    <string name="recalcula_button">Re calcular</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="categorias">categorias</string>
+    <string name="tareas">Tareas</string>
+    <string name="add_task">Add_task</string>
+    <string name="Business">Business</string>
+    <string name="Personal">Personal</string>
+    <string name="Other">Other</string>
+
+<!--    TODO organize these strings-->
 </resources>

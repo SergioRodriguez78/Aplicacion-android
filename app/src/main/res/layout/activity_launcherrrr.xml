@@ -12,21 +12,21 @@
         android:id="@+id/btnSaludar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seccion saludar" />
+        android:text="@string/seccion_saludar" />
 
     <Button
         android:id="@+id/btnImcApp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seccion calculo IMC" />
+        android:layout_marginTop="10dp"
+        android:text="@string/seccion_calculo_imc" />
 
     <Button
         android:id="@+id/btnToDo"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="To Do App" />
+        android:layout_marginTop="10dp"
+        android:text="@string/to_do_app" />
 
 
 </LinearLayout>

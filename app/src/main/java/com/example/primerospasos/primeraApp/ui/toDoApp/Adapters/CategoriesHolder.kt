@@ -9,25 +9,26 @@ import com.example.primerospasos.primeraApp.ui.toDoApp.TaskCategory
 
 class CategoriesHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     private val viewBinding = ItemTaskCategoryBinding.bind(view)
+    private val resources = viewBinding.root.context.resources
 
     fun render(taskCategory: TaskCategory) {
         when (taskCategory) {
             TaskCategory.Business -> {
-                viewBinding.tvCategoryName.text = "Business"
+                viewBinding.tvCategoryName.text = resources.getString(R.string.Business)
                 viewBinding.divider.setBackgroundColor(
                     ContextCompat.getColor(view.context, R.color.business_category)
                 )
             }
 
             TaskCategory.Other -> {
-                viewBinding.tvCategoryName.text = "Other"
+                viewBinding.tvCategoryName.text =  resources.getString(R.string.Other)
                 viewBinding.divider.setBackgroundColor(
                     ContextCompat.getColor(view.context, R.color.other_category)
                 )
             }
 
             TaskCategory.Personal -> {
-                viewBinding.tvCategoryName.text = "Personal"
+                viewBinding.tvCategoryName.text =  resources.getString(R.string.Personal)
                 viewBinding.divider.setBackgroundColor(
                     ContextCompat.getColor(view.context, R.color.personal_category)
                 )

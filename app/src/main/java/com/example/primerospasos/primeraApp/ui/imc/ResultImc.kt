@@ -1,7 +1,7 @@
 package com.example.primerospasos.primeraApp.ui.imc
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.primerospasos.R
 import com.example.primerospasos.databinding.ActivityResultImcBinding
