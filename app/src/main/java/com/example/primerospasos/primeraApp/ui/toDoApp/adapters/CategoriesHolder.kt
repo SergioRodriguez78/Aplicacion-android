@@ -1,4 +1,4 @@
-package com.example.primerospasos.primeraApp.ui.toDoApp.Adapters
+package com.example.primerospasos.primeraApp.ui.toDoApp.adapters
 
 import android.view.View
 import androidx.core.content.ContextCompat
@@ -11,7 +11,16 @@ class CategoriesHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     private val viewBinding = ItemTaskCategoryBinding.bind(view)
     private val resources = viewBinding.root.context.resources
 
-    fun render(taskCategory: TaskCategory) {
+    fun render(taskCategory: TaskCategory, onItemSelected: (Int) -> Unit) {
+
+        viewBinding.categoryCard.setCardBackgroundColor(
+            if (taskCategory.isSelected) {
+                ContextCompat.getColor(view.context, R.color.background_disabled)
+            } else ContextCompat.getColor(view.context, R.color.background_card)
+        )
+
+        itemView.setOnClickListener { onItemSelected(layoutPosition) }
+
         when (taskCategory) {
             TaskCategory.Business -> {
                 viewBinding.tvCategoryName.text = resources.getString(R.string.Business)
@@ -21,14 +30,14 @@ class CategoriesHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             }
 
             TaskCategory.Other -> {
-                viewBinding.tvCategoryName.text =  resources.getString(R.string.Other)
+                viewBinding.tvCategoryName.text = resources.getString(R.string.Other)
                 viewBinding.divider.setBackgroundColor(
                     ContextCompat.getColor(view.context, R.color.other_category)
                 )
             }
 
             TaskCategory.Personal -> {
-                viewBinding.tvCategoryName.text =  resources.getString(R.string.Personal)
+                viewBinding.tvCategoryName.text = resources.getString(R.string.Personal)
                 viewBinding.divider.setBackgroundColor(
                     ContextCompat.getColor(view.context, R.color.personal_category)
                 )
